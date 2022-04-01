@@ -19,7 +19,6 @@ public class MasterSaveUpdateDeleteService implements MasterSaveUpdateDeleteServ
 	@Autowired
 	private TransaksiDaoInterface transaksiDao;
 	
-	@Override
 	public String save(Transaksi obj) throws Exception, HibernateException {
 		String ret = "";
 		
@@ -34,7 +33,6 @@ public class MasterSaveUpdateDeleteService implements MasterSaveUpdateDeleteServ
 		return ret;
 	}
 	
-	@Override
 	public String delete(String id) throws Exception, HibernateException {
 		String ret = "";
 		
@@ -49,7 +47,6 @@ public class MasterSaveUpdateDeleteService implements MasterSaveUpdateDeleteServ
 		return ret;
 	}
 	
-	@Override
 	public ResultField findAllTransaksiWithPaging(Integer page, String field, String search, Integer maxResults, String orderBy) {
 		
 		return transaksiDao.findAll(field, search, page, maxResults, orderBy);

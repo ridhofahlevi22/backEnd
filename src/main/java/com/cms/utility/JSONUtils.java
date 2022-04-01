@@ -55,12 +55,12 @@ public class JSONUtils {
 			GsonBuilder builder = new GsonBuilder();
 			//builder.excludeFieldsWithoutExposeAnnotation();
 			builder.setExclusionStrategies(new ExclusionStrategy() {  
-			    @Override
+			    
 			    public boolean shouldSkipField(FieldAttributes f) {
 			        return false;
 			    }
 
-			    @Override
+			    
 			    public boolean shouldSkipClass(Class<?> incomingClass) {
 			        return incomingClass == Date.class || incomingClass == boolean.class;
 			    }
@@ -91,7 +91,7 @@ public class JSONUtils {
 	}
 	
 	public static List<?> parseFromJSon(String content, Type listType) {
-		List<?> ret = new ArrayList<>();
+		List<?> ret = new ArrayList<Object>();
 		
 		try {
 			GsonBuilder builder = new GsonBuilder();

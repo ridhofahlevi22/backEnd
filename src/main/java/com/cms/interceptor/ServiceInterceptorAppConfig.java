@@ -10,7 +10,6 @@ public class ServiceInterceptorAppConfig implements WebMvcConfigurer {
 	@Autowired
 	ServiceInterceptor serviceInterceptor;
 
-	@Override
 	public void addInterceptors(InterceptorRegistry registry) {
 		registry.addInterceptor(serviceInterceptor);
 	}

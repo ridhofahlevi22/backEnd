@@ -47,7 +47,6 @@ public class AppConfig implements WebMvcConfigurer {
         return new SimpleAsyncTaskExecutor();
    }
     
-	@Override
 	public void configureViewResolvers(ViewResolverRegistry registry) {
 
 		InternalResourceViewResolver viewResolver = new InternalResourceViewResolver();
@@ -60,14 +59,17 @@ public class AppConfig implements WebMvcConfigurer {
 	/**
      * Configure ResourceHandlers to serve static resources like CSS/ Javascript etc...
      */
-    @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         registry.addResourceHandler("/static/**").addResourceLocations("/static/");
     }
     
     @Bean
     public WebServerFactoryCustomizer<ConfigurableServletWebServerFactory> webServerFactoryCustomizer() {
-        return factory -> factory.setContextPath(env.getProperty("app.base.path"));
+        return new WebServerFactoryCustomizer<ConfigurableServletWebServerFactory>() {
+			public void customize(ConfigurableServletWebServerFactory factory) {
+				factory.setContextPath(env.getProperty("app.base.path"));
+			}
+		};
     }
     
     @Bean
@@ -96,13 +98,12 @@ public class AppConfig implements WebMvcConfigurer {
        return localeChangeInterceptor;
     }
     
-    @Override
     public void addInterceptors(InterceptorRegistry registry) {
        registry.addInterceptor(localeChangeInterceptor());
     }
     
-    @Override
-    public void configurePathMatch(PathMatchConfigurer matcher) {
+    @SuppressWarnings("deprecation")
+	public void configurePathMatch(PathMatchConfigurer matcher) {
         matcher.setUseRegisteredSuffixPatternMatch(true);
     }
     

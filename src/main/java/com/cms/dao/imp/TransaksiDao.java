@@ -15,7 +15,6 @@ import com.cms.utility.StaticUtil;
 
 @Repository("transaksiDao")
 public class TransaksiDao extends AbstractDao<String, Transaksi> implements TransaksiDaoInterface {
-	@Override
 	public Transaksi findById(String id) {
 		Transaksi obj = null;
 		Session ss = getSession();
@@ -35,7 +34,6 @@ public class TransaksiDao extends AbstractDao<String, Transaksi> implements Tran
 	}
 	
 	@SuppressWarnings("unchecked")
-	@Override
 	public List<Transaksi> findAll() {
 		List<Transaksi> list = null;
 		Session ss = getSession();
@@ -53,13 +51,11 @@ public class TransaksiDao extends AbstractDao<String, Transaksi> implements Tran
 		return list;
 	}
 	
-	@Override
 	public String save(Transaksi obj) throws HibernateException, Exception {
 		String ret = saveOrUpdate(obj);
 		return ret;
 	}
 	
-	@Override
 	public String saveAlot(List<Object> list) throws HibernateException, Exception {
 		String ret = "";
 		Session ss = null;
@@ -74,7 +70,6 @@ public class TransaksiDao extends AbstractDao<String, Transaksi> implements Tran
 		return ret;
 	}
 	
-	@Override
 	public String deleteById(String id) throws HibernateException, Exception {
 		Transaksi obj = findById(id);
 		String ret = delete(obj);
@@ -82,7 +77,6 @@ public class TransaksiDao extends AbstractDao<String, Transaksi> implements Tran
 	}
 	
 	@SuppressWarnings("unchecked")
-	@Override
 	public ResultField findAll(String field, String search, Integer page, Integer maxResults, String orderBy) {
 		ResultField ret = new ResultField();
 		List<Transaksi> list = null;
@@ -138,7 +132,7 @@ public class TransaksiDao extends AbstractDao<String, Transaksi> implements Tran
 		return ret;
 	}
 	
-	@Override
+	@SuppressWarnings("removal")
 	public Long count(String field, String search) {
 		Long ret = new Long(0);
 		String hql = "";

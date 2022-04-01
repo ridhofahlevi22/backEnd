@@ -32,7 +32,6 @@ public class Application extends SpringBootServletInitializer implements Applica
         SpringApplication.run(Application.class, args);
     }
     
-    @Override
     public void run(ApplicationArguments arg0) throws Exception {
        System.out.println("Application Runner Start");
     }

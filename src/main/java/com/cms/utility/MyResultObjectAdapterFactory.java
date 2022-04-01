@@ -7,7 +7,6 @@ import com.google.gson.reflect.TypeToken;
 
 public class MyResultObjectAdapterFactory implements TypeAdapterFactory {
 
-	@Override
 	public <T> TypeAdapter<T> create(Gson arg0, TypeToken<T> arg1) {
 		// TODO Auto-generated method stub
 		return null;

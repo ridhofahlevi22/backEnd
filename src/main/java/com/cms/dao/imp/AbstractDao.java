@@ -184,7 +184,7 @@ public abstract class AbstractDao<PK extends Serializable, T> {
 	
 	public List<T> criteriaGetList(String attr, List<?> listParam) {
 		Session ss = getSession();
-		List<T> list = new ArrayList<>();
+		List<T> list = new ArrayList<T>();
 		
 		try {
 			CriteriaBuilder cb = ss.getCriteriaBuilder();

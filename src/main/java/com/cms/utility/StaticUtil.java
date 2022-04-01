@@ -568,6 +568,7 @@ public class StaticUtil {
 		return ret;
 	}
 
+	@SuppressWarnings("removal")
 	public static Float getDefaultValue(Float data) {
 		Float ret = new Float(0);
 

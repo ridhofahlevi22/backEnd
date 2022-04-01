@@ -5,24 +5,22 @@
 
     <groupId>org.springframework</groupId>
     <artifactId>gs-spring-boot</artifactId>
-    <version>0.1.0</version>
+    <version>5.3.18</version>
 	<packaging>jar</packaging>
-   	<name>BOC</name>
-   	<description>BOC Application</description>
    
     <parent>
        <groupId>org.springframework.boot</groupId>
        <artifactId>spring-boot-starter-parent</artifactId>
-       <version>2.0.5.RELEASE</version>
+       <version>2.6.6</version>
        <relativePath/>
     </parent>
 	
 	<properties>
-        <java.version>1.8</java.version>
+        <java.version>16</java.version>
         <start-class>com.cms.configuration.Application</start-class>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
       	<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-      	<spring-cloud.version>Finchley.SR1</spring-cloud.version>
+      	<spring-cloud.version>2021.0.1</spring-cloud.version>
     </properties>
     
     <dependencies>
@@ -31,13 +29,13 @@
 		<dependency>
 	        <groupId>org.apache.poi</groupId>
 	        <artifactId>poi</artifactId>
-	        <version>3.15</version>
+	        <version>4.1.2</version>
 	    </dependency>
 	
 	    <dependency>
 	        <groupId>org.apache.poi</groupId>
 	        <artifactId>poi-ooxml</artifactId>
-	        <version>3.15</version>
+	        <version>5.2.2</version>
 	    </dependency>
     
     	<dependency>
@@ -60,13 +58,13 @@
 		<dependency>
 		    <groupId>org.springframework.boot</groupId>
 		    <artifactId>spring-boot-starter-mail</artifactId>
-		    <version>2.1.0.RELEASE</version><!--$NO-MVN-MAN-VER$-->
+		    <version>2.6.5</version><!--$NO-MVN-MAN-VER$-->
 		</dependency>
     	
 		<dependency>
 		    <groupId>net.sf.jasperreports</groupId>
 		    <artifactId>jasperreports</artifactId>
-		    <version>6.7.0</version>
+		    <version>6.18.1</version>
 		</dependency>
     	
 		<dependency>
@@ -78,29 +76,31 @@
 		<dependency>
 		    <groupId>org.springframework.cloud</groupId>
 		    <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
-		    <version>2.0.1.RELEASE</version><!--$NO-MVN-MAN-VER$-->
+		    <version>3.1.1</version><!--$NO-MVN-MAN-VER$-->
 		</dependency>
 
 		<dependency>
 		    <groupId>org.springframework.cloud</groupId>
 		    <artifactId>spring-cloud-starter-netflix-zuul</artifactId>
-		    <version>2.0.1.RELEASE</version><!--$NO-MVN-MAN-VER$-->
+		    <version>2.2.10.RELEASE</version><!--$NO-MVN-MAN-VER$-->
 		</dependency>
 		
 		<dependency>
 		    <groupId>org.springframework.cloud</groupId>
 		    <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
-		    <version>2.0.1.RELEASE</version><!--$NO-MVN-MAN-VER$-->
+		    <version>2.2.7.RELEASE</version><!--$NO-MVN-MAN-VER$-->
 		</dependency>
 
 		<dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+            <version>2.6.4</version><!--$NO-MVN-MAN-VER$-->
         </dependency>
         
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
+            <version>2.6.4</version><!--$NO-MVN-MAN-VER$-->
         </dependency>
         <!-- end::actuator[] -->
         <!-- tag::tests[] -->
@@ -115,7 +115,7 @@
 		<dependency>
 		    <groupId>com.google.code.gson</groupId>
 		    <artifactId>gson</artifactId>
-		    <version>2.8.5</version><!--$NO-MVN-MAN-VER$-->
+		    <version>2.8.9</version><!--$NO-MVN-MAN-VER$-->
 		</dependency>
         
         <!-- https://mvnrepository.com/artifact/org.codehaus.jackson/jackson-core-asl -->
@@ -135,18 +135,20 @@
         <dependency>
 		   <groupId>org.springframework.boot</groupId>
 		   <artifactId>spring-boot-starter-thymeleaf</artifactId>
+		   <version>2.6.4</version><!--$NO-MVN-MAN-VER$-->
 		</dependency>
 		
 		<dependency>
 			<groupId>org.postgresql</groupId>
 			<artifactId>postgresql</artifactId>
+			<version>42.3.3</version><!--$NO-MVN-MAN-VER$-->
 		</dependency>
 		
 		<!-- https://mvnrepository.com/artifact/com.mchange/c3p0 -->
 		<dependency>
 		    <groupId>com.mchange</groupId>
 		    <artifactId>c3p0</artifactId>
-		    <version>0.9.5.2</version>
+		    <version>0.9.5.5</version>
 		</dependency>
 		
 		<!-- https://mvnrepository.com/artifact/io.jsonwebtoken/jjwt -->
@@ -167,43 +169,46 @@
 		<dependency>
 		    <groupId>org.hibernate</groupId>
 		    <artifactId>hibernate-c3p0</artifactId>
-		    <version>5.3.7.Final</version><!--$NO-MVN-MAN-VER$-->
+		    <version>5.6.1.Final</version><!--$NO-MVN-MAN-VER$-->
 		</dependency>
 		 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
+			<version>2.6.4</version><!--$NO-MVN-MAN-VER$-->
 		</dependency>
 		
 		<dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-jdbc</artifactId>
+            <version>2.6.4</version><!--$NO-MVN-MAN-VER$-->
         </dependency>
         
         <!-- https://mvnrepository.com/artifact/org.springframework/spring-jdbc -->
 		<dependency>
 		    <groupId>org.springframework</groupId>
 		    <artifactId>spring-jdbc</artifactId>
-		    <version>5.1.1.RELEASE</version><!--$NO-MVN-MAN-VER$-->
+		    <version>${project.version}</version><!--$NO-MVN-MAN-VER$-->
 		</dependency>
         
         <!-- https://mvnrepository.com/artifact/org.springframework/spring-tx -->
 		<dependency>
 		    <groupId>org.springframework</groupId>
 		    <artifactId>spring-tx</artifactId>
-		    <version>5.1.1.RELEASE</version><!--$NO-MVN-MAN-VER$-->
+		    <version>${project.version}</version><!--$NO-MVN-MAN-VER$-->
 		</dependency>
         
         <!-- https://mvnrepository.com/artifact/org.springframework.security/spring-security-crypto -->
 		<dependency>
 		    <groupId>org.springframework.security</groupId>
 		    <artifactId>spring-security-crypto</artifactId>
-		    <version>5.1.1.RELEASE</version><!--$NO-MVN-MAN-VER$-->
+		    <version>5.6.2</version><!--$NO-MVN-MAN-VER$-->
 		</dependency>
         
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-orm</artifactId>
+            <version>${project.version}</version><!--$NO-MVN-MAN-VER$-->
         </dependency> 
 		<!-- https://mvnrepository.com/artifact/postgresql/postgresql -->
 

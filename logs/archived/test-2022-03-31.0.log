@@ -1,0 +1,63 @@
+2022-03-31 16:41:10,017 INFO com.mchange.v2.log.slf4j.Slf4jMLog$Slf4jMLogger$InfoLogger [MLog-Init-Reporter] MLog clients using slf4j logging.
+2022-03-31 16:41:10,888 INFO com.mchange.v2.log.slf4j.Slf4jMLog$Slf4jMLogger$InfoLogger [main] Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2022-03-31 16:41:11,408 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2022-03-31 16:41:11,758 INFO org.hibernate.Version [main] HHH000412: Hibernate Core {5.2.17.Final}
+2022-03-31 16:41:11,767 INFO org.hibernate.cfg.Environment [main] HHH000205: Loaded properties from resource hibernate.properties: {hibernate.bytecode.use_reflection_optimizer=false, hibernate.jdbc.lob.non_contextual_creation=true}
+2022-03-31 16:41:11,901 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2022-03-31 16:41:12,401 INFO com.mchange.v2.log.slf4j.Slf4jMLog$Slf4jMLogger$InfoLogger [main] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> C3P0TestTable, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 2ryrhzan1pyzeq51plksft|23ca36d, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 2ryrhzan1pyzeq51plksft|23ca36d, idleConnectionTestPeriod -> 60, initialPoolSize -> 5, jdbcUrl -> jdbc:postgresql://localhost:5432/tester, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 180, maxIdleTime -> 200, maxIdleTimeExcessConnections -> 160, maxPoolSize -> 50, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> true, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2022-03-31 16:41:13,425 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-03-31 16:41:13,969 INFO org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl [main] HHH000421: Disabling contextual LOB creation as hibernate.jdbc.lob.non_contextual_creation is true
+2022-03-31 16:41:13,982 INFO org.hibernate.type.BasicTypeRegistry [main] HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@58186f9f
+2022-03-31 16:41:18,212 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8282"]
+2022-03-31 16:41:18,252 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2022-03-31 16:41:18,252 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet Engine: Apache Tomcat/8.5.34
+2022-03-31 16:41:18,298 INFO org.apache.juli.logging.DirectJDKLog [localhost-startStop-1] The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_171\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_171/bin/server;C:/Program Files/Java/jre1.8.0_171/bin;C:/Program Files/Java/jre1.8.0_171/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Java\jre1.8.0_171\bin;C:\JMeter\bin;C:\Program Files\Git\cmd;C:\xampp\php;C:\ProgramData\ComposerSetup\bin;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\nodejs\;C:\Users\user\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\Java\jdk1.8.0_91\bin;C:\Users\user\AppData\Roaming\Composer\vendor\bin;C:\Users\user\AppData\Roaming\npm;E:\app\eclipseJEEPhoton;;.]
+2022-03-31 16:41:18,888 INFO org.apache.juli.logging.DirectJDKLog [localhost-startStop-1] Initializing Spring embedded WebApplicationContext
+2022-03-31 16:41:19,513 WARN com.netflix.config.sources.URLConfigurationSource [localhost-startStop-1] No URLs will be polled as dynamic configuration sources.
+2022-03-31 16:41:19,513 INFO com.netflix.config.sources.URLConfigurationSource [localhost-startStop-1] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-03-31 16:41:19,565 INFO com.netflix.config.DynamicPropertyFactory [localhost-startStop-1] DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@774aef50
+2022-03-31 16:41:26,731 INFO com.sun.jersey.server.impl.application.WebApplicationImpl [localhost-startStop-1] Initiating Jersey application, version 'Jersey: 1.19.1 03/11/2016 02:08 PM'
+2022-03-31 16:41:26,993 INFO com.netflix.discovery.provider.DiscoveryJerseyProvider [localhost-startStop-1] Using JSON encoding codec LegacyJacksonJson
+2022-03-31 16:41:26,993 INFO com.netflix.discovery.provider.DiscoveryJerseyProvider [localhost-startStop-1] Using JSON decoding codec LegacyJacksonJson
+2022-03-31 16:41:27,516 INFO com.netflix.discovery.provider.DiscoveryJerseyProvider [localhost-startStop-1] Using XML encoding codec XStreamXml
+2022-03-31 16:41:27,517 INFO com.netflix.discovery.provider.DiscoveryJerseyProvider [localhost-startStop-1] Using XML decoding codec XStreamXml
+2022-03-31 16:41:30,807 WARN com.netflix.config.sources.URLConfigurationSource [main] No URLs will be polled as dynamic configuration sources.
+2022-03-31 16:41:30,808 INFO com.netflix.config.sources.URLConfigurationSource [main] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-03-31 16:41:39,017 INFO com.netflix.discovery.DiscoveryClient [main] Initializing Eureka in region us-east-1
+2022-03-31 16:41:39,026 INFO com.netflix.discovery.DiscoveryClient [main] Client configured to neither register nor query for data.
+2022-03-31 16:41:39,085 INFO com.netflix.discovery.DiscoveryClient [main] Discovery Client initialized at timestamp 1648719699081 with initial instances count: 0
+2022-03-31 16:41:39,410 INFO com.netflix.eureka.DefaultEurekaServerContext [main] Initializing ...
+2022-03-31 16:41:39,414 INFO com.netflix.eureka.cluster.PeerEurekaNodes [main] Adding new peer nodes [http://localhost:8761/eureka/]
+2022-03-31 16:41:41,081 INFO com.netflix.discovery.provider.DiscoveryJerseyProvider [main] Using JSON encoding codec LegacyJacksonJson
+2022-03-31 16:41:41,082 INFO com.netflix.discovery.provider.DiscoveryJerseyProvider [main] Using JSON decoding codec LegacyJacksonJson
+2022-03-31 16:41:41,082 INFO com.netflix.discovery.provider.DiscoveryJerseyProvider [main] Using XML encoding codec XStreamXml
+2022-03-31 16:41:41,083 INFO com.netflix.discovery.provider.DiscoveryJerseyProvider [main] Using XML decoding codec XStreamXml
+2022-03-31 16:41:41,762 INFO com.netflix.eureka.cluster.PeerEurekaNodes [main] Replica node URL:  http://localhost:8761/eureka/
+2022-03-31 16:41:41,810 INFO com.netflix.eureka.registry.AbstractInstanceRegistry [main] Finished initializing remote region registries. All known remote regions: []
+2022-03-31 16:41:41,815 INFO com.netflix.eureka.DefaultEurekaServerContext [main] Initialized
+2022-03-31 16:41:43,249 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8282"]
+2022-03-31 16:41:43,328 INFO com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl [Thread-17] Got 1 instances from neighboring DS node
+2022-03-31 16:41:43,329 INFO com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl [Thread-17] Renew threshold is: 1
+2022-03-31 16:41:43,330 INFO com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl [Thread-17] Changing status to UP
+2022-03-31 16:41:43,462 INFO org.apache.juli.logging.DirectJDKLog [main] Using a shared selector for servlet write/read
+2022-03-31 16:42:43,334 INFO com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask [Eureka-EvictionTimer] Running the evict task with compensationTime 0ms
+2022-03-31 16:43:43,334 INFO com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask [Eureka-EvictionTimer] Running the evict task with compensationTime 0ms
+2022-03-31 16:44:43,335 INFO com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask [Eureka-EvictionTimer] Running the evict task with compensationTime 0ms
+2022-03-31 16:45:43,336 INFO com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask [Eureka-EvictionTimer] Running the evict task with compensationTime 1ms
+2022-03-31 16:46:43,336 INFO com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask [Eureka-EvictionTimer] Running the evict task with compensationTime 0ms
+2022-03-31 16:47:43,337 INFO com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask [Eureka-EvictionTimer] Running the evict task with compensationTime 0ms
+2022-03-31 16:48:43,337 INFO com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask [Eureka-EvictionTimer] Running the evict task with compensationTime 0ms
+2022-03-31 16:49:43,337 INFO com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask [Eureka-EvictionTimer] Running the evict task with compensationTime 0ms
+2022-03-31 16:50:43,338 INFO com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask [Eureka-EvictionTimer] Running the evict task with compensationTime 0ms
+2022-03-31 16:51:43,339 INFO com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask [Eureka-EvictionTimer] Running the evict task with compensationTime 0ms
+2022-03-31 16:52:43,339 INFO com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask [Eureka-EvictionTimer] Running the evict task with compensationTime 0ms
+2022-03-31 16:53:43,340 INFO com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask [Eureka-EvictionTimer] Running the evict task with compensationTime 0ms
+2022-03-31 16:54:43,340 INFO com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask [Eureka-EvictionTimer] Running the evict task with compensationTime 0ms
+2022-03-31 16:55:43,341 INFO com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask [Eureka-EvictionTimer] Running the evict task with compensationTime 0ms
+2022-03-31 16:56:41,812 INFO com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] Current renewal threshold is : 1
+2022-03-31 16:56:43,341 INFO com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask [Eureka-EvictionTimer] Running the evict task with compensationTime 0ms
+2022-03-31 16:57:43,341 INFO com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask [Eureka-EvictionTimer] Running the evict task with compensationTime 0ms
+2022-03-31 16:58:43,342 INFO com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask [Eureka-EvictionTimer] Running the evict task with compensationTime 0ms
+2022-03-31 16:59:43,343 INFO com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask [Eureka-EvictionTimer] Running the evict task with compensationTime 0ms
